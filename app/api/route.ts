@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-export const prisma = new PrismaClient();
+const prisma = new PrismaClient();
 
 export async function GET() {
   console.log("GET");
